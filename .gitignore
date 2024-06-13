@@ -1,0 +1,10 @@
+.idea/
+
+.venv/
+venv
+./backend/src/core/db.sqlite3
+
+.DS_Store
+
+
+
