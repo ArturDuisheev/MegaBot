@@ -10,6 +10,9 @@ class UserData {
     }
 }
 
+$output = [UserData]::new()
+$output.GetUserInfo()
+
 class UserDataFetcher {
     [UserData[]] $WinInformation
     
