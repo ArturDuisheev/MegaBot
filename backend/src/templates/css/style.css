@@ -1,0 +1,38 @@
+
+body{
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    width: 400px;
+    height:700px;
+    border: #54e020 10px solid;
+    border-radius: 10px;
+}
+
+.logo-img{
+    width: 320px;
+    height: 220px;
+    padding: 10px 34px 40px;
+}
+
+.button {
+    width: 350px;
+    height:  50px;
+    margin: 3px 30px 30px;
+    display: block;
+    background-color: #6a2fc2;
+    color: #ffffff;
+    font-style: ;
+    border: None;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    color: #6a2fc2;
+    border: #6a2fc2 solid;
+}

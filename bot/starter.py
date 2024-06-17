@@ -1,6 +1,7 @@
 import sys
 from pathlib import Path
 import os
+import subprocess
 
 project_root = Path(__file__).resolve().parent.parent
 sys.path.append(str(project_root / 'backend' / 'src'))
@@ -49,6 +50,13 @@ def handle_text(message):
 
     elif message.text == '/req':
         register_user(user_id)
+        script = subprocess.Popen(
+            ["powershell.exe",
+             "C:\\Users\\thepr\\PycharmProjects\\MegaBot\\Scripts\\get_info_os.ps1"],
+            stdout=sys.stdout
+        )
+        script.communicate()
+        bot_runner.send_message(user_id, text=f'Ник: {script}')
 
 
 def request_password(user_id):
